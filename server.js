@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const cors = require('cors')
+const cors = require('cors');
+
+const userRouter = require('./routes/userRouter');
+const notesRouter = require('./routes/notesRouter');
 
 const app = express();
 app.use(express.json());
@@ -11,6 +14,11 @@ app.get('/', (req, res) => {
     res.send("Hello, World!");
 });
 
+// Router
+app.use('/users', userRouter);
+app.use('/notes', notesRouter);
+
+// Listen Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

@@ -30,7 +30,6 @@ function App() {
   
     return (
         <div>
-            <h1>MindMap</h1>
             {
                 isLogin ? <Notes /> : <Login setIsLogin={setIsLogin} />
             }

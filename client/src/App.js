@@ -31,7 +31,7 @@ function App() {
     return (
         <div>
             {
-                isLogin ? <Notes /> : <Login setIsLogin={setIsLogin} />
+                isLogin ? <Notes setIsLogin={setIsLogin} /> : <Login setIsLogin={setIsLogin} />
             }
         </div>
     );

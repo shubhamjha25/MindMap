@@ -148,13 +148,26 @@ a {
       border: 5px solid #ccc;
     }
   }
-  
-  /* *********Login / Register******* *//*
+
   .login-page{
     position: relative;
     width: 100%;
     min-height: 100vh;
   }
+  .login span{
+      cursor: pointer;
+  }
+  .login span:hover{
+    color: whitesmoke;
+    text-shadow: tomato;
+}
+.register span{
+    cursor: pointer;
+}
+.register span:hover{
+  color: whitesmoke;
+  text-shadow: tomato;
+}
   .login input,
   .register input{
     margin-bottom: 15px;
@@ -183,4 +196,4 @@ a {
   .login-page span:hover{
     color: orange;
     cursor: pointer;
-  }*/
+  }

@@ -47,9 +47,15 @@ function Login({setIsLogin}) {
         }
     }
 
+    const [onLogin, setOnLogin] = useState(false);
+    const style = {
+        visibility: onLogin ? "visible" : "hidden",
+        opacity: onLogin ? 1 : 0
+    }
+
     return(
         <section>
-            <div className="login">
+            <div className="login create-note">
                 <h2>Login</h2>
                 <form onSubmit={loginSubmit}>
                     <input type="email" name="email" id="login-email" placeholder="Email" required value={user.email} onChange={onChangeInput} />
@@ -57,13 +63,13 @@ function Login({setIsLogin}) {
                 
                     <button type="submit">Login</button>
                     <p>New to MindMap? 
-                        <span> Create an Account!</span>
+                        <span onClick={() => setOnLogin(true)}> Create an Account!</span>
                     </p>
                     <h3>{err}</h3>
                 </form>
             </div>
 
-            <div className="register">
+            <div className="register create-note" style={style}>
                 <h2>Register</h2>
                 <form onSubmit={registerSubmit}>
                     <input type="text" name="name" id="register-name" placeholder="Username" required value={user.name} onChange={onChangeInput} />
@@ -72,7 +78,7 @@ function Login({setIsLogin}) {
                 
                     <button type="submit">Register</button>
                     <p>Already have an account? 
-                        <span> Login Here!</span>
+                        <span onClick={() => setOnLogin(false)}> Login Here!</span>
                     </p>
                     <h3>{err}</h3>
                 </form>

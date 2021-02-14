@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Login from './components/Login';
 import Notes from './components/Notes';
+import HomePage from './components/HomePage';
 import './components/Notes.css';
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     return (
         <div>
             {
-                isLogin ? <Notes setIsLogin={setIsLogin} /> : <Login setIsLogin={setIsLogin} />
+                isLogin ? <Notes setIsLogin={setIsLogin} /> : <main><HomePage /><Login setIsLogin={setIsLogin} /></main>
             }
         </div>
     );

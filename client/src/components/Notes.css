@@ -1,11 +1,10 @@
-body {
-    background: rgb(12, 41, 12);
-}
+/* All CSS */
 
 .notes-page {
     width: 100%;
     min-height: 100vh;
     color: whitesmoke;
+    background: rgb(12, 41, 12);
 }
 
 .notes-page header{
@@ -149,51 +148,91 @@ a {
     }
   }
 
-  .login-page{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-  }
-  .login span{
-      cursor: pointer;
-  }
-  .login span:hover{
-    color: whitesmoke;
-    text-shadow: tomato;
-}
-.register span{
-    cursor: pointer;
-}
-.register span:hover{
-  color: whitesmoke;
-  text-shadow: tomato;
-}
-  .login input,
-  .register input{
-    margin-bottom: 15px;
-  }
-  .login,
-  .register{
+.login, .register{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(63,9,63);
-  }
-  .login-page h2,
-  .login-page h3{
-    color: #fff8;
-  }
-  .login-page h3{
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: 15px;
-  }
-  .login-page p{
-    margin: 10px 0;
-    color: white;
-  }
-  .login-page span:hover{
-    color: orange;
+    top: 40%;
+    left: 12%;
+    background: white;
+}
+
+.login form input, .register form input{
+        border: 1px solid grey;
+        border-radius: 9px;
+        border-bottom: 2px solid gray;
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 35px;
+}
+
+.login-btn, .register-btn {
+    margin: 10px 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 14px;
+    background: skyblue;
+    color: black;
     cursor: pointer;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background: #79b9e1;
+}
+
+.login form p, .register form p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-span, .register-span {
+    padding: 0 10px 0 3px;
+    cursor: pointer;
+    color: blue;
+    border-bottom: 2px solid black;
+}
+
+.login-span:hover, .register-span:hover {
+    background: skyblue;
+    border-radius: 5px;
+    color: black;
+    border-bottom: 4px solid skyblue;
+    transition: 0.2s ease-in;
+}
+
+.err {
+    font-size: larger;
+}
+
+#myBtn img {
+    width: 38px;
+}
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 2px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn img:hover {
+    width: 50px;
+    transition: 0.45s ease-in;
+}
+
+@media (max-width: 500px){
+    .mindmap-logo{
+      width: 375px;
+    }
+    .login, .register{
+        position: absolute;
+        top: 17%;
+        left: 12%;
+        background: white;
+    }
   }

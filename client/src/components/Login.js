@@ -54,33 +54,33 @@ function Login({setIsLogin}) {
     }
 
     return(
-        <section>
-            <div className="login create-note">
+        <section className="login-register-section">
+            <div className="login">
                 <h2>Login</h2>
                 <form onSubmit={loginSubmit}>
                     <input type="email" name="email" id="login-email" placeholder="Email" required value={user.email} onChange={onChangeInput} />
                     <input type="password" name="password" id="login-password" placeholder="Password" required value={user.password} autoComplete="true" onChange={onChangeInput} />
                 
-                    <button type="submit">Login</button>
+                    <button className="login-btn" type="submit">Login</button>
+                    <h3 className="err">{err}</h3>
                     <p>New to MindMap? 
-                        <span onClick={() => setOnLogin(true)}> Create an Account!</span>
+                        <span className="login-span" onClick={() => setOnLogin(true)}> Create an Account!</span>
                     </p>
-                    <h3>{err}</h3>
                 </form>
             </div>
 
-            <div className="register create-note" style={style}>
+            <div className="register" style={style}>
                 <h2>Register</h2>
                 <form onSubmit={registerSubmit}>
                     <input type="text" name="name" id="register-name" placeholder="Username" required value={user.name} onChange={onChangeInput} />
                     <input type="email" name="email" id="register-email" placeholder="Email" required value={user.email} onChange={onChangeInput} />
                     <input type="password" name="password" id="register-password" placeholder="Password" required value={user.password} autoComplete="true"  onChange={onChangeInput} />
                 
-                    <button type="submit">Register</button>
+                    <button className="register-btn" type="submit">Register</button>
+                    <h3 className="err">{err}</h3>
                     <p>Already have an account? 
-                        <span onClick={() => setOnLogin(false)}> Login Here!</span>
+                        <span className="register-span" onClick={() => setOnLogin(false)}> Login Here!</span>
                     </p>
-                    <h3>{err}</h3>
                 </form>
             </div>
         </section>

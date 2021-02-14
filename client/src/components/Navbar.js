@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Logo from '../logo.png';
 
 function Navbar({setIsLogin}) {
 
@@ -9,16 +10,16 @@ function Navbar({setIsLogin}) {
     }
 
     return (
-        <header>
-            <div className="logo">
-                <h1><Link to="/">MindMap</Link></h1>
+        <section className="navbar">
+            <div className="logo">    
+                <img className="mindmap-logo" src={Logo} alt="MindMap Logo"/>
             </div>
-            <ul>
+            <ul className="nav-list">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/create">Make a Note</Link></li>
                 <li onClick={logoutSubmit}><Link to="/">Logout</Link></li>
             </ul>
-        </header>
+        </section>
     )
 }
 

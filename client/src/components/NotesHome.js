@@ -37,7 +37,9 @@ function NotesHome() {
     }
 
     return(
-        <div className="note-wrapper">
+        <>
+        <h4 className="your-notes">Your Notes</h4>
+            <div className="note-wrapper">
             {
                 notes.map(note => (
                     <div className="card" key={note._id}>
@@ -54,7 +56,9 @@ function NotesHome() {
                     </div>
                 ))
             }
-        </div>
+            </div>       
+        
+        </>
     );
 }
 

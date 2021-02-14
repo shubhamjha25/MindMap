@@ -99,7 +99,7 @@ a {
     outline: none;
     color: black;
     border: 3px solid black;
-    border-radius: 35%;
+    border-radius: 50%;
   }
   .card h4{
     margin-right: 10px;
@@ -180,11 +180,13 @@ a {
     letter-spacing: 2px;
     color: rgb(7,25,63);
   }
+
+
   @media (max-width: 500px){
     
 .create-note{
     color: black;
-      max-width: 300px;
+      max-width: 302px;
     width: 100%;
     margin: 45px auto auto auto;
     border: 4px dashed rgb(34, 30, 30);
@@ -269,3 +271,77 @@ a {
     width: 50px;
     transition: 0.45s ease-in;
 }
+
+@media (max-width: 500px){
+    .mindmap-logo{
+      width: 370px;
+    }
+    .login, .register{
+        position: absolute;
+        top: 17%;
+        left: 12%;
+        background: white;
+    }
+    .note-wrapper{
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        padding-left: 25px;
+        margin: auto;
+    }
+    .card{
+        width: 250px;
+        box-shadow: 0 0 15px black;
+        padding: 10px;
+        position: relative;
+        color: black;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .navbar .nav-list {
+        color: black !important;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 9%;
+        left: 0%;
+    }
+    .navbar .logo {
+        background: lightskyblue;
+        border-radius: 0px 0px 0% 0;
+    }
+    .navbar .nav-list li {
+        list-style: none;
+        margin-right: 7px;
+        font-size: 1rem;
+        padding: 3px 10px;
+        padding-bottom: 3px;
+    }
+  }
+
+  @media (max-width: 324px){
+    .mindmap-logo{
+      width: 320px;
+    }
+    
+    .your-notes{
+        margin-top: 50px;
+    }
+
+    .navbar .logo {
+        background: lightskyblue;
+        border-radius: 0px 0px 0% 0;
+    }
+
+    .note-wrapper{
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        padding-left: 10px;
+        margin: auto;
+    }
+    
+  }

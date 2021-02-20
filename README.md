@@ -5,7 +5,7 @@ MindMap is a notes taking app made with the MERN Stack. It supports the CRUD Ope
 
 <br />
 
-### TECH STCAK
+### TECH STACK
 <p align="left">
   <img align="left" alt="MongoDB" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
   <img align="left" alt="Express" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />

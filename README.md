@@ -16,6 +16,18 @@ MindMap is a notes taking app made with the MERN Stack. It supports the CRUD Ope
 
 <br /> <br /> <br />
 
+### PROJECT STRUCTURE
+<pre>
+├───client
+│   ├───public
+│   └───src
+│       └───components
+├───controllers
+├───middleware
+├───models
+└───routes
+</pre><br />
+
 ### OPEN SOURCE
 
 In case if you want some changes, any additional feature or fix any typo :) feel free to do so. All contributions are welcome ! <br />
